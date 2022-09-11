@@ -1,0 +1,24 @@
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{card_style}
+\usepackage{afterpage}
+
+\definecolor{green}{HTML}{01A325}
+\definecolor{pink}{HTML}{F70075}
+\definecolor{yellow}{HTML}{FFD900}
+\definecolor{blue}{HTML}{2400EE}
+
+% Document
+\begin{document}
+    \pagecolor{white}
+    \colordisk{blue}{yellow}
+    \newpage
+    \pagecolor{black}
+    \colordisk{yellow}{blue}
+    \newpage
+    \colordisk{green}{pink}
+    \newpage
+    \colordisk{pink}{green}
+\end{document}

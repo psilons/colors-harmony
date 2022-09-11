@@ -1,0 +1,28 @@
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{card_style}
+\usepackage{afterpage}
+
+% Document
+\begin{document}
+    \pagecolor{black}
+    \colordisk{red}{aqua}
+    \newpage
+    \colordisk{aqua}{red}
+    \newpage
+    \colordisk{green}{fuchsia}
+    \newpage
+    \colordisk{fuchsia}{green}
+    \newpage
+    \colordisk{blue}{yellow}
+    \newpage
+    \colordisk{yellow}{blue}
+    \newpage
+    \pagecolor{white}\afterpage{\nopagecolor}
+    \colordisk{black}{white}
+    \newpage
+    \pagecolor{black}\afterpage{\nopagecolor}
+    \colordisk{white}{black}
+\end{document}

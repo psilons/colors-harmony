@@ -1,0 +1,33 @@
+%! Package = PACKAGE_NAME
+%! Author = Wonderland
+%! Date = 2/22/2022
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{card_style}[2022/02/22 card_style Package]
+
+\RequirePackage{geometry}
+\geometry{
+   paperwidth = 11in,
+   paperheight = 8.5in,
+   margin = 0.01in,
+}
+
+\usepackage[table]{xcolor}
+\definecolor{fuchsia}{rgb}{1.0,0.0,1.0}
+\definecolor{aqua}{rgb}{0.0, 1.0, 1.0}
+
+\usepackage{tikz}
+
+\newcommand{\colordisk}[2] {
+    \null
+    \vfill
+    \begin{center}
+        \begin{tikzpicture}
+            \filldraw[color={#1}, fill={#1}](0,0) circle (3.5in);
+            \filldraw[color={#2}, fill={#2}](0,0) circle (0.5in);
+        \end{tikzpicture}
+    \end{center}
+    \null
+    \vfill
+}
+
